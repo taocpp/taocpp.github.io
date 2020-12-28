@@ -39,7 +39,7 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			@include vendor('flex-direction', 'column-reverse');
 			text-align: center;
 
@@ -57,6 +57,11 @@
 						}
 					}
 				}
+
+				.actions {
+					@include vendor('justify-content', 'center');
+					width: calc(100% + #{_size(element-margin) * 0.5});
+				}
 			}
 
 			.image {
@@ -66,7 +71,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			.image {
 				padding: 0.35em;
 

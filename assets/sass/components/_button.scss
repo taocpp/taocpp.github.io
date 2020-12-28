@@ -38,8 +38,6 @@
 		}
 
 		&.fit {
-			display: block;
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
 			width: 100%;
 		}
 
@@ -47,7 +45,7 @@
 			font-size: 0.8em;
 		}
 
-		&.big {
+		&.large {
 			font-size: 1.35em;
 		}
 
@@ -57,7 +55,7 @@
 			opacity: 0.25;
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			min-width: 0;
 		}
 	}
@@ -86,7 +84,7 @@
 				}
 			}
 
-			&.special {
+			&.primary {
 				background-color: _palette(accent);
 				color: _palette(invert, bg) !important;
 				box-shadow: none;

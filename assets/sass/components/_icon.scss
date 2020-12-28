@@ -19,6 +19,22 @@
 			display: none;
 		}
 
+		&:before {
+			line-height: solid;
+		}
+
+		&.solid {
+			&:before {
+				font-weight: 900;
+			}
+		}
+
+		&.brands {
+			&:before {
+				font-family: 'Font Awesome 5 Brands';
+			}
+		}
+
 		&.major {
 			border: solid 1px;
 			display: inline-block;
@@ -74,7 +90,7 @@
 			color: _palette(accent5);
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			&.major {
 				&:before {
 					font-size: 5.5rem;
@@ -82,7 +98,7 @@
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			&.major {
 				&:before {
 					font-size: 4.75rem;
@@ -90,7 +106,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			&.major {
 				margin: 0 0 (_size(element-margin) * 0.75) 0;
 				padding: 0.35em;
