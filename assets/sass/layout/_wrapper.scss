@@ -11,11 +11,11 @@
 		max-width: calc(100% - 4em);
 		margin: 0 auto;
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			max-width: calc(100% - 2em);
 		}
 
-		@include breakpoint(xxsmall) {
+		@include breakpoint('<=xxsmall') {
 			max-width: 100%;
 		}
 	}

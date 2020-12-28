@@ -49,7 +49,7 @@
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			@include padding(4em, 4em, (0, 0, -2em, 0));
 
 			&.alt {
@@ -57,7 +57,7 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			@include padding(4em, 3em, (0, 0, -2em, 0));
 
 			&.alt {
@@ -65,7 +65,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			@include padding(3em, 2em, (0, 0, -1em, 0));
 
 			p {
@@ -86,7 +86,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			@include padding(3em, 1.5em, (0, 0, -1em, 0));
 
 			&.alt {
@@ -94,7 +94,7 @@
 			}
 		}
 
-		@include breakpoint(xxsmall) {
+		@include breakpoint('<=xxsmall') {
 			@include padding(2.5em, 1em, (0, 0, -1em, 0));
 
 			&.alt {
@@ -102,7 +102,7 @@
 			}
 		}
 
-		body.is-loading & {
+		body.is-preload & {
 			&.alt {
 				> * {
 					opacity: 0;

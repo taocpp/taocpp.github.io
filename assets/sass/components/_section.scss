@@ -58,7 +58,7 @@
 		}
 	}
 
-	@include breakpoint(small) {
+	@include breakpoint('<=small') {
 		header {
 			&.major {
 				margin-bottom: 0;

@@ -25,11 +25,11 @@
 			text-align: center;
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			@include padding(4em, 4em);
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			@include padding(4em, 3em);
 			display: block;
 			margin: 0 0 (_size(element-margin) * 1.5) 0;
@@ -46,15 +46,15 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			@include padding(3em, 2em);
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			@include padding(3em, 1.5em);
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			@include padding(2.5em, 1em);
 		}
 	}

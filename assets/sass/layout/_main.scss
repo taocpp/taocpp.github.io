@@ -35,7 +35,7 @@
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			> .main {
 				@include padding(4em, 4em);
 
@@ -46,7 +46,7 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			> .main {
 				@include padding(4em, 3em);
 
@@ -57,7 +57,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			> .main {
 				@include padding(3em, 2em);
 
@@ -68,7 +68,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			> .main {
 				@include padding(3em, 1.5em);
 
@@ -79,7 +79,7 @@
 			}
 		}
 
-		@include breakpoint(xxsmall) {
+		@include breakpoint('<=xxsmall') {
 			border-radius: 0;
 
 			> .main {
