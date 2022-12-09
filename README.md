@@ -2,4 +2,4 @@
 
 [The Art of C++ Website](https://taocpp.github.io)
 
-Copyright (c) 2018-2021 Dr. Colin Hirsch and Daniel Frey
+Copyright (c) 2018-2022 Dr. Colin Hirsch and Daniel Frey
